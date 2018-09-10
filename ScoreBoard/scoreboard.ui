@@ -575,7 +575,7 @@
          </font>
         </property>
         <property name="text">
-         <string>+1 GOL</string>
+         <string>+1 GOAL</string>
         </property>
        </widget>
       </item>
@@ -603,7 +603,7 @@
          </font>
         </property>
         <property name="text">
-         <string>-1 GOL</string>
+         <string>-1 GOAL</string>
         </property>
        </widget>
       </item>
@@ -651,7 +651,7 @@
          </font>
         </property>
         <property name="text">
-         <string>+1 GOL</string>
+         <string>+1 GOAL</string>
         </property>
        </widget>
       </item>
@@ -679,7 +679,7 @@
          </font>
         </property>
         <property name="text">
-         <string>-1 GOL</string>
+         <string>-1 GOAL</string>
         </property>
        </widget>
       </item>

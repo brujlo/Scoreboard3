@@ -828,7 +828,17 @@ debug\main.obj: ..\ScoreBoard\main.cpp ../ScoreBoard/scoreboard.h \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtCore\qeventloop.h \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\qdesktopwidget.h \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtGui\qguiapplication.h \
-		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtGui\qinputmethod.h
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtGui\qinputmethod.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\QGraphicsView \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\qgraphicsview.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtGui\qpainter.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtGui\qtextoption.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtGui\qpen.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\qscrollarea.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\qabstractscrollarea.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\qframe.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\qgraphicsscene.h \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\QGraphicsScene
 
 debug\scoreboard.obj: ..\ScoreBoard\scoreboard.cpp ../ScoreBoard/scoreboard.h \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\QMainWindow \
@@ -1084,7 +1094,9 @@ debug\scoreboard.obj: ..\ScoreBoard\scoreboard.cpp ../ScoreBoard/scoreboard.h \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtSql\qsqlquery.h \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtGui\QVector2D \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtCore\QThread \
-		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtCore\QDate
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtCore\QDate \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\QFileDialog \
+		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\qfiledialog.h
 
 debug\scoreboard_shower.obj: ..\ScoreBoard\scoreboard_shower.cpp ../ScoreBoard/scoreboard_shower.h \
 		C:\Qt\Qt5.11.1\5.11.1\msvc2017_64\include\QtWidgets\QDialog \

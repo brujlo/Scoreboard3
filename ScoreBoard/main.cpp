@@ -1,5 +1,8 @@
 #include "scoreboard.h"
 #include <QApplication>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+//#include <QDeclarativeEngine>
 
 int main(int argc, char *argv[])
 {
@@ -7,6 +10,7 @@ int main(int argc, char *argv[])
     a.setStyle("fusion");
     Scoreboard w;
     w.show();
+
 
     return a.exec();
 }

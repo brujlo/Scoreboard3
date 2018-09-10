@@ -354,6 +354,7 @@
         <font>
          <family>Digital-7</family>
          <pointsize>100</pointsize>
+         <kerning>true</kerning>
         </font>
        </property>
        <property name="styleSheet">

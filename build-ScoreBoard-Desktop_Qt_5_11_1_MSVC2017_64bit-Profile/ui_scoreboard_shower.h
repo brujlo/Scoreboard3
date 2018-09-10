@@ -185,6 +185,7 @@ public:
         QFont font3;
         font3.setFamily(QStringLiteral("Digital-7"));
         font3.setPointSize(100);
+        font3.setKerning(true);
         swTimer->setFont(font3);
         swTimer->setStyleSheet(QStringLiteral("color: rgb(255, 255, 127);"));
         swTimer->setTextFormat(Qt::AutoText);
