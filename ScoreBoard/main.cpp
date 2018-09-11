@@ -2,7 +2,6 @@
 #include <QApplication>
 #include <QGraphicsView>
 #include <QGraphicsScene>
-//#include <QDeclarativeEngine>
 
 int main(int argc, char *argv[])
 {

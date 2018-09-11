@@ -7,10 +7,11 @@
 #include <connectionmaker.h>
 #include <QMessageBox>
 
+
 DBInput::DBInput(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::DBInput)
-{
+{   
     ui->setupUi(this);
     ConnectionMaker cm;
 
@@ -19,7 +20,10 @@ DBInput::DBInput(QWidget *parent) :
         mModel->setTable("teams");
         mModel->select();
 
+        mModel->setEditStrategy(QSqlTableModel::OnManualSubmit);
         ui->tableView->setModel(mModel);
+        ui->tableView->hideColumn(0);
+
         isLoaded = true;
     }else{
         QMessageBox::information(this,tr("DB connection"), tr("Connection error."));
@@ -44,10 +48,19 @@ void DBInput::on_dbDelete_clicked()
 
 void DBInput::on_dbUpdate_clicked()
 {
-    mModel->select();
+    if(mModel->submitAll()){
+        QMessageBox::information(this,tr("Settings"), tr("Updated."));
+    }else{
+        QMessageBox::critical(this,tr("Error"), "Not updated!");
+    }
 }
 
-void DBInput::on_buttonBox_accepted()
+void DBInput::on_dbDone_clicked()
 {
+    this->close();
+}
 
+void DBInput::on_dbDeleteAll_clicked()
+{
+    mModel->removeRows(0, mModel->rowCount());
 }

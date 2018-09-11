@@ -384,6 +384,6 @@ void Scoreboard::on_selectDB_clicked()
                 this,
                 "Find DB file",
                 "C://",
-                "All files (*.*);; MDF (*.mdf);; ACCDB (*.accdb)"
+                "All files (*.*);; MDB (*.mdb);; ACCDB (*.accdb)"
                 );
 }

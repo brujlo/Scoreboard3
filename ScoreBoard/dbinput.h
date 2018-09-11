@@ -30,7 +30,9 @@ private slots:
 
     void on_dbUpdate_clicked();
 
-    void on_buttonBox_accepted();
+    void on_dbDone_clicked();
+
+    void on_dbDeleteAll_clicked();
 
 private:
     Ui::DBInput *ui;

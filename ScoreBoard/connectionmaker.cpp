@@ -16,8 +16,10 @@ bool ConnectionMaker::makeConnection(){
     db = QSqlDatabase::addDatabase("QODBC");
 
     //DBQ = "DBQ=E:/VisualProjects/QT/QT2/ScoreBoard/scoreboardDB.mdb;";
+    //DBQ = "DBQ=F:/PROJEKTI/VS/QT/ScoreBoard/scoreboardDB.mdb;";
     DBQ = "DBQ=" + Scoreboard::dbPath;
     DSN = "DSN=C:/Users/bruno.brckovic/Documents/scoreboard2;";
+    //driver = "Driver={Microsoft Access Driver (*.mdb)};";
     driver = "Driver={Microsoft Access Driver (*.mdb, *.accdb)};";
     connString = driver + DBQ;
 
