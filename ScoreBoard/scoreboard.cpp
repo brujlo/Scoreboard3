@@ -41,12 +41,17 @@ void Scoreboard::on_pushButton_clicked()
     ui->pushButton->setAutoFillBackground(true);
     pal.setColor(QPalette::Button, QColor(240,240,240));
     ui->pushButton->setPalette(pal);
+
+    //! ... Uncheck alow multiple windows (Viewer display) as default ...
     //scoreboardShower = new Scoreboard_Shower(this);
+
     scoreboardShower->adjustSize();
     scoreboardShower->setWindowFlags(windowFlags() | Qt::WindowFullscreenButtonHint);
-    //scoreboardShower->showMaximized();
-    scoreboardShower->show();
 
+    //! ... Uncheck to get maximized window (Viewer display) as default ...
+    //scoreboardShower->showMaximized();
+
+    scoreboardShower->show();
 }
 
 void Scoreboard::on_setTeams_clicked()

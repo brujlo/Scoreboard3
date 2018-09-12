@@ -39,7 +39,7 @@ TimeAndFolu::~TimeAndFolu()
     delete ui;
 }
 
-void TimeAndFolu::on_updateTiFoBT_clicked()
+void TimeAndFolu::on_buttonBox_accepted()
 {
     ConnectionMaker cm;
     QSqlQuery query;
@@ -48,10 +48,5 @@ void TimeAndFolu::on_updateTiFoBT_clicked()
 
     query.prepare("UPDATE Settings SET HalfTime = " + QString::number(halftime) + ", Fouls = " + QString::number(fouls) + " WHERE ID = 1;");
 
-    if(query.exec()){
-        QMessageBox::information(this,tr("Settings"), tr("Updated."));
-    }else{
-        QMessageBox::critical(this,tr("error::"), query.lastError().text());
-    }
-
+    query.exec() ? QMessageBox::information(this,tr("Settings"), tr("Updated.")) : QMessageBox::critical(this,tr("Error, not updated"), query.lastError().text());
 }

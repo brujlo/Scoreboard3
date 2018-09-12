@@ -10,6 +10,5 @@ int main(int argc, char *argv[])
     Scoreboard w;
     w.show();
 
-
     return a.exec();
 }

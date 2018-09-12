@@ -20,7 +20,7 @@ private:
 public:
     bool isLoaded;
 private slots:
-    void on_updateTiFoBT_clicked();
+    void on_buttonBox_accepted();
 };
 
 #endif // TIMEANDFOLU_H

@@ -5,10 +5,6 @@
 #include <QSqlDatabase>
 #include<QTableView>
 
-//#include <QDialog>
-//#include <QtCore>
-//#include<QtGui>
-
 namespace Ui {
 class DBInput;
 }
