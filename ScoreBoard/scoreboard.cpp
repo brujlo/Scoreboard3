@@ -63,7 +63,6 @@ void Scoreboard::on_setTeams_clicked()
     }
 }
 
-
 void Scoreboard::on_setHalfTime_clicked()
 {
     TimeAndFolu tf;

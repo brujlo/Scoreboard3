@@ -48,11 +48,7 @@ void DBInput::on_dbDelete_clicked()
 
 void DBInput::on_dbUpdate_clicked()
 {
-    if(mModel->submitAll()){
-        QMessageBox::information(this,tr("Settings"), tr("Updated."));
-    }else{
-        QMessageBox::critical(this,tr("Error"), "Not updated!");
-    }
+    mModel->submitAll() ? QMessageBox::information(this,tr("Settings"), tr("Updated.")) : QMessageBox::critical(this,tr("Error"), "Not updated!");
 }
 
 void DBInput::on_dbDone_clicked()
