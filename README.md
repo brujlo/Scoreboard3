@@ -35,11 +35,11 @@ It is intended to manage the football match information and provide viewers with
 * "Settings" - you must set time for "halftime" and number of fouls
 * "Reset/Set" - first time preset, you get all data from DB into your CC, and halftime are set from 0 to 1
 * "Home" - select home team
-* "Guset" - select guest team
+* "Guest" - select guest team
 * "Open scoreboard" - to open viewer display
 * "Start timer" - when all is set, press this button to start the game
 * "Pause/Resume" - to pause a game if needed
-* "Reset/Set" - after first time, you have loop of two, first and second halftime. After second halftime everything is reseted to defaul values
+* "Reset/Set" - after first time, you have loop of two, first and second halftime. After second halftime everything is reseted to default values
 * "+/-" - no further explanation is necessary
 
 ## Authors
